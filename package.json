@@ -1,0 +1,37 @@
+{
+  "name": "rebbitmq",
+  "version": "1.0.0",
+  "main": "./_/index.js",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc -b -w",
+    "start": "nodemon  ./_/index.js",
+    "connect": "nodemon ./_/src/connect.js",
+    "m1": "nodemon ./_/src/m1.js",
+    "m2": "nodemon ./_/src/m2.js",
+    "bootstrap": "bash sh ./scripts/bootstrap.sh",
+    "clean": "bash sh ./scripts/clean.sh",
+    "clean-hard": "bash sh ./scripts/clean.sh --hard",
+    "lint": "eslint src",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.5",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@types/amqplib": "^0.10.1",
+    "amqplib": "^0.10.3",
+    "express": "^4.18.2",
+    "fastify": "^4.21.0",
+    "prettier": "^3.0.0"
+  }
+}
